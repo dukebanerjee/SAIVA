@@ -1,0 +1,13 @@
+name = SAIVA
+description = SAIVA theme
+package = saiva
+version = VERSION
+core = 7.x
+stylesheets[all][] = layout.css
+scripts[] = theme.js
+
+; Information added by drupal.org packaging script on 2011-12-05
+version = "1.00"
+project = "saiva"
+datestamp = "1323125439"
+
