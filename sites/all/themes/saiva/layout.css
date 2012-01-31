@@ -222,6 +222,23 @@ body {
   padding: 0;
 }
 
+#main-menu li ul {
+  display: none;
+  position: absolute;
+  top: 1em;
+  left: 0;
+}
+
+#main-menu li > ul {
+  /* IE hack */
+  top: auto;
+  left: auto;
+}
+
+#main-menu li:hover ul {
+  display: block;
+}
+
 #main-menu li {
   margin-right: 0em;
   margin-top: 17px;
@@ -246,13 +263,70 @@ body {
   padding-left: 19px;
 }
 
+#main-menu a.active,
 #main-menu a:hover {
   color: #ff0000;
   background: transparent url('images/button-right.jpg') no-repeat scroll top right;
 }
 
+#main-menu a.active span,
 #main-menu a:hover span {
   background: transparent url('images/button-left.jpg') no-repeat;
+}
+
+#main-menu li ul a.active,
+#main-menu li ul a.active span,
+#main-menu li ul a,
+#main-menu li ul a span,
+#main-menu li ul a:hover,
+#main-menu li ul a:hover span {
+  background-image: none;
+}
+
+#main-menu li ul {
+  margin-top: 10px;
+  width: 200px;
+  border: 1px solid #CCCCCC;
+  font: normal 12px Verdana;
+  margin-left: 20px;
+  color: #000000;
+}
+
+#main-menu li ul li {
+  width: 190px;
+  margin: 0;
+  padding: 0;
+  background: white;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 5px;
+}
+
+#main-menu li ul li,
+#main-menu li ul li a,
+#main-menu li ul li span {
+  background: white;
+  color: #A71305;
+}
+
+#main-menu li ul li:hover,
+#main-menu li ul li:hover a,
+#main-menu li ul li:hover span {
+  background: #E58411;
+  color: #ffffff;
+}
+
+#main-menu li ul a {
+  padding: 0;
+  margin: 0;  
+  width: 100%;
+  text-indent: 3px;
+  padding: 1px 0;
+  text-decoration: none;
+}
+
+#main-menu li ul span {
+  padding: 0;
+  margin: 0;
 }
 
 /*
