@@ -329,6 +329,16 @@ body {
   margin: 0;
 }
 
+#highlighted img,
+#block-search-form {
+  float: left;
+}
+
+#block-search-form {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
 /*
 .toplink {
    color:#262626;

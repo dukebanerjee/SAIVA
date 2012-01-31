@@ -27,6 +27,10 @@
   </div>
   <div id="bottom-gutter-right"></div>
   <div id="clear"></div>
+  <div id="highlighted">
+    <img src="<?php print $images ?>/joinnow.jpg" />
+    <?php print render($page['highlighted']); ?>
+  </div>
 </div>
 
 <br /><br /><br /><br /><br /><br />
