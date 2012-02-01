@@ -31,6 +31,30 @@
     <img src="<?php print $images ?>/joinnow.jpg" />
     <?php print render($page['highlighted']); ?>
   </div>
+  <div id="columns-top"></div>
+  <div id="columns">
+    <div id="content">
+      <?php print render($page['content']); ?>
+    </div>
+    <div id="footer1">
+      <div id="footer1-gutter-left"></div>
+      <div id="footer1-center">
+        <div id="menu-quick-links">
+          <h2>Quick Links</h2>
+          <?php print drupal_render(menu_tree('menu-quick-links')) ?>
+        </div>
+      </div>
+      <div id="footer1-gutter-right"></div>
+    </div>
+    <div id="footer2">
+      <div id="footer2-gutter-left"></div>
+      <div id="footer2-center">
+        <div id="footer-left">SAIVA - Division of the Saxena Foundation, Inc.</div>
+        <div id="footer-right">Copyright &copy; 2010-2011 SAIVA. All Rights Reserved.</div>
+      </div>
+      <div id="footer2-gutter-right"></div>
+    </div>
+  </div>
 </div>
 
 <br /><br /><br /><br /><br /><br />
@@ -221,7 +245,7 @@
                         <table width="639" border="0" align="center" cellpadding="0" cellspacing="0">
                           <tbody>
                             <tr>
-                              <td width="412" align="left" valign="top">
+                              <t    d width="412" align="left" valign="top">
                                 <table width="399" border="0" cellspacing="0" cellpadding="0">
                                   <tbody>
                                     <tr>
