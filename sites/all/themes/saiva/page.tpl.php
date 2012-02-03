@@ -1,5 +1,8 @@
-<?php $name = t(user_load($user->uid)->field_first_name['und']['0']['value']) ?>
-<?php $images = $base_path . $directory . '/images' ?>
+<?php 
+  $user_info = user_load($user->uid);
+  $name = t($user_info->field_first_name['und'] ? $user_info->field_first_name['und']['0']['value'] : $user->name);
+  $images = $base_path . $directory . '/images';
+?>
 
 <div id="header">
   <div id="top-gutter-left"></div>
