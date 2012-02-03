@@ -1,6 +1,6 @@
 <?php 
   $user_info = user_load($user->uid);
-  $name = t($user_info->field_first_name['und'] ? $user_info->field_first_name['und']['0']['value'] : $user->name);
+  $name = t(array_key_exists('und', $user_info->field_first_name) ? $user_info->field_first_name['und']['0']['value'] : $user->name);
   $images = $base_path . $directory . '/images';
 ?>
 
