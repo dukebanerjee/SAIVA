@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Site Images feature.
+ */
+
+include_once('site_images.features.inc');
