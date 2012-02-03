@@ -368,21 +368,21 @@ body {
 }
 
 #footer1-gutter-left {
-  background-image: url('http://saiva.org/images/box3-left.jpg');
+  background-image: url('images/box3-left.jpg');
   width: 11px;
   height: 36px;
   float: left;
 }
 
 #footer1-center {
-  background-image: url('http://saiva.org/images/box3-center.jpg');
+  background-image: url('images/box3-center.jpg');
   width: 920px;
   height: 36px;
   float: left;
 }
 
 #footer1-gutter-right {
-  background-image: url('http://saiva.org/images/box3-right.jpg');
+  background-image: url('images/box3-right.jpg');
   width: 11px;
   height: 36px;
   float: left;
@@ -443,21 +443,21 @@ body {
 }
 
 #footer2-gutter-left {
-  background-image: url('http://saiva.org/images/box4-left.jpg');
+  background-image: url('images/box4-left.jpg');
   width: 10px;
   height: 50px;
   float: left;
 }
 
 #footer2-center {
-  background-image: url('http://saiva.org/images/box4-center.jpg');
+  background-image: url('images/box4-center.jpg');
   width: 920px;
   height: 50px;
   float: left;
 }
 
 #footer2-gutter-right {
-  background-image: url('http://saiva.org/images/box4-right.jpg');
+  background-image: url('images/box4-right.jpg');
   width: 10px;
   height: 50px;
   float: left;
