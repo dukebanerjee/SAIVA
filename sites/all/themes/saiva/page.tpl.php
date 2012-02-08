@@ -37,7 +37,6 @@
   <div id="columns-top"></div>
   <div id="columns">
     <div id="content">
-      <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
       <a id="main-content"></a>
       <?php if(!$is_front): ?>
       <?php print render($title_prefix); ?>
