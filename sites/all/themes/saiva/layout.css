@@ -477,3 +477,13 @@ body {
   float: right;
   padding-top: 17px;
 }
+
+#page-title {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  color: #2f9cf7;
+  background-image: url('images/header-background.jpg');
+  background-repeat: no-repeat;
+  padding-bottom: 12px;
+}
