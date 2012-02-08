@@ -20,4 +20,15 @@ function SAIVA_menu_link(array $variables) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
+function SAIVA_preprocess_page(&$vars, $hook) {
+  // Don't show tabs on the user account page
+  foreach($vars['tabs']['#primary'] as $index => $tab) {
+    if($tab['#link']['path'] == 'user/login' ||
+       $tab['#link']['path'] == 'user/password') {
+      unset($vars['tabs']);
+      break;
+    }
+  }
+}
+
 ?>
