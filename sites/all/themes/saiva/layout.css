@@ -528,7 +528,25 @@ body {
 #webform-component-waiver-emergency-contact--waiver-emergency-zip {
   float: left;
   clear: right;
-  padding-right: 1em;
+}
+
+#webform-component-waiver-zip,
+#webform-component-waiver-emergency-contact--waiver-emergency-zip {
+  margin-left: 1em;
+}
+
+#webform-component-waiver-signature-date-day label,
+#webform-component-waiver-signature-date-month label,
+#webform-component-waiver-signature-date-year label {
+  font-weight: 100;
+}
+
+#webform-component-waiver-signature-date-month label {
+  margin-left: 1em;
+}
+
+#webform-component-waiver-signature-date-year label {
+  margin-right: -0.15em;
 }
 
 #webform-component-waiver-guardian,
