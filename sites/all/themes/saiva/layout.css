@@ -263,13 +263,13 @@ body {
   padding-left: 19px;
 }
 
-#main-menu a.active,
+#main-menu a.active-trail,
 #main-menu a:hover {
   color: #ff0000;
   background: transparent url('images/button-right.jpg') no-repeat scroll top right;
 }
 
-#main-menu a.active span,
+#main-menu a.active-trail span,
 #main-menu a:hover span {
   background: transparent url('images/button-left.jpg') no-repeat;
 }
