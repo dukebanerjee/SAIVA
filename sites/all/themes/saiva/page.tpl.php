@@ -40,7 +40,13 @@
       <a id="main-content"></a>
       <?php if(!$is_front): ?>
       <?php print render($title_prefix); ?>
-      <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?>:</h1><?php endif; ?>
+      <?php if ($title): ?>
+        <?php if(arg(0) == 'user' && arg(1) == 'register'): ?>
+          <h1 class="title" id="page-title">Signup:</h1>
+        <?php else: ?>
+          <h1 class="title" id="page-title"><?php print $title; ?>:</h1>
+        <?php endif; ?>
+      <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php endif; ?>
       <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
