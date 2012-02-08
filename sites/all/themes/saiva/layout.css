@@ -487,3 +487,21 @@ body {
   background-repeat: no-repeat;
   padding-bottom: 12px;
 }
+
+.link {
+   color:#4A4A4A;
+   font-family:Arial, Verdana, Helvetica, sans-serif;
+   font-size:13px;
+   line-height:25px;
+   padding-top:7px;
+}
+
+.link a {
+   color:#4A4A4A;
+   text-decoration:none;
+}
+
+.link a:hover {
+   color:#4A4A4A;
+   text-decoration:underline;
+}
