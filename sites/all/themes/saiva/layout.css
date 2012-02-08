@@ -5,6 +5,10 @@ body {
   background-repeat: repeat-x;
 }
 
+#content {
+  width: 925px;
+}
+
 #header {
   width: 980px;
   margin: auto;
@@ -254,7 +258,7 @@ body {
   padding-top: 17px;
   padding-bottom: 11px;
   padding-right: 19px;
-  margin-right: 35px;
+  margin-right: 10px;
 }
 
 #main-menu span {
@@ -504,4 +508,59 @@ body {
 .link a:hover {
    color:#4A4A4A;
    text-decoration:underline;
+}
+
+#webform-client-form-13 .form-actions,
+#webform-component-waiver-signature,
+#webform-component-waiver-phone-number,
+#webform-component-waiver-emergency-contact--waiver-emergency-phone,
+#webform-component-waiver-guardian {
+  clear: both;
+}
+
+#webform-component-waiver-signature-date-day,
+#webform-component-waiver-signature-date-month,
+#webform-component-waiver-signature-date-year,
+#webform-component-waiver-address,
+#webform-component-waiver-zip,
+#webform-component-waiver-emergency-contact,
+#webform-component-waiver-emergency-contact--waiver-emergency-address,
+#webform-component-waiver-emergency-contact--waiver-emergency-zip {
+  float: left;
+  clear: right;
+  padding-right: 1em;
+}
+
+#webform-component-waiver-guardian,
+#webform-component-waiver-emergency-contact {
+  width: 900px;
+}
+
+#webform-component-contact-name label,
+#webform-component-contact-email label,
+#webform-component-contact-interests label,
+#webform-component-contact-message label {
+  float: left;
+  padding-right: 1em;
+  width: 5em;
+  text-align: right;
+}
+
+#webform-component-contact-name input,
+#webform-component-contact-email input {
+  width: 15em;
+}
+
+#webform-component-contact-interests textarea,
+#webform-component-contact-message textarea {
+  width: 35em;
+}
+
+#webform-client-form-14 {
+  margin: auto;
+  width: 40em;
+}
+
+#webform-client-form-14 .form-actions {
+  padding-left: 6em;
 }
