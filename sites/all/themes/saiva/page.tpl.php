@@ -75,4 +75,4 @@
     </div>
   </div>
 </div>
-<?php db_query("DELETE FROM {cache};") ?>
+<?php /* debug: db_query("DELETE FROM {cache};") */ ?>
