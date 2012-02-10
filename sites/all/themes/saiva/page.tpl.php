@@ -41,11 +41,14 @@
       <?php if(!$is_front): ?>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
-        <?php if(arg(0) == 'user' && arg(1) == 'register'): ?>
+        <?php if(arg(0) == 'user' && arg(1) == 'register') { ?>
           <h1 class="title" id="page-title">Signup:</h1>
-        <?php else: ?>
+        <?php } else if ($node->type == 'article') { ?>
+          <h1 class="title" id="page-title">News:</h1>
+          <h2 class="article-title"><?php print $title; ?></h2>
+        <?php } else { ?>
           <h1 class="title" id="page-title"><?php print $title; ?>:</h1>
-        <?php endif; ?>
+        <?php } ?>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php endif; ?>

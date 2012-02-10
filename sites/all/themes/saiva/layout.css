@@ -492,7 +492,7 @@ body {
   padding-bottom: 12px;
 }
 
-.node-type-article #page-title {
+.article-title {
   font-size: 15px;
   font-weight: 600;
   color: #000000;
