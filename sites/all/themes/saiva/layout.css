@@ -501,6 +501,7 @@ body {
   padding-bottom: 0;
 }
 
+.page-articles .view-content h2,
 .page-documents .view-content h2,
 .page-news .view-content h2 {
   font-size: 15px;
@@ -515,14 +516,16 @@ body {
   padding-right: 5px;
 }
 
+.page-articles .submitted,
 .page-documents .submitted,
 .page-news .submitted {
   clear: both;
   font-weight: 600;
 }
 
+.page-articles div.node-article,
 .page-documents div.node-document,
-.page-news div.node-article {
+.page-news div.node-news {
   border: 1px solid black;
   padding: 5px;
   padding-left: 10px;
@@ -530,11 +533,12 @@ body {
   margin-bottom: 20px;
 }
 
-.page-documents ul,
-.page-documents li {
+.page-articles ul, .page-articles li,
+.page-documents ul, .page-documents li {
   list-style: none;
 }
 
+.page-articles h2 a,
 .page-documents h2 a,
 .page-news h2 a,
 .link {
@@ -545,6 +549,7 @@ body {
    padding-top:7px;
 }
 
+.page-articles h2 a,
 .page-documents h2 a,
 .page-news h2 a,
 .link a {
@@ -552,6 +557,7 @@ body {
    text-decoration:none;
 }
 
+.page-articles h2 a:hover,
 .page-documents h2 a:hover,
 .page-news h2 a:hover,
 .link a:hover {

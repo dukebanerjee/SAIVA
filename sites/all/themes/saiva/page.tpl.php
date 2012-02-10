@@ -43,12 +43,17 @@
       <?php if ($title): ?>
         <?php if(arg(0) == 'user' && arg(1) == 'register') { ?>
           <h1 class="title" id="page-title">Signup:</h1>
-        <?php } else if ($node->type == 'article') { ?>
+        <?php } else if (isset($node)) { ?>
+        <?php if ($node->type == 'article') { ?>
+          <h1 class="title" id="page-title">Articles &amp; Links:</h1>
+          <h2 class="article-title"><?php print $title; ?></h2>
+        <?php } else if ($node->type == 'news') { ?>
           <h1 class="title" id="page-title">News:</h1>
           <h2 class="article-title"><?php print $title; ?></h2>
         <?php } else if ($node->type == 'document') { ?>
           <h1 class="title" id="page-title">Documents:</h1>
           <h2 class="article-title"><?php print $title; ?></h2>
+        <?php } ?>
         <?php } else { ?>
           <h1 class="title" id="page-title"><?php print $title; ?>:</h1>
         <?php } ?>
