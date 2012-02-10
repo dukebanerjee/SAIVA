@@ -516,6 +516,7 @@ body {
 
 .page-news .submitted {
   clear: both;
+  font-weight: 600;
 }
 
 .page-news div.node-article {
