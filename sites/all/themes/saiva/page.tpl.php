@@ -47,7 +47,7 @@
           <h1 class="title" id="page-title">News:</h1>
           <h2 class="article-title"><?php print $title; ?></h2>
         <?php } else if ($node->type == 'document') { ?>
-          <h1 class="title" id="page-title">Document:</h1>
+          <h1 class="title" id="page-title">Documents:</h1>
           <h2 class="article-title"><?php print $title; ?></h2>
         <?php } else { ?>
           <h1 class="title" id="page-title"><?php print $title; ?>:</h1>
