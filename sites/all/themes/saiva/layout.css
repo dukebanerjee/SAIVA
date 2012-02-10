@@ -492,6 +492,40 @@ body {
   padding-bottom: 12px;
 }
 
+.node-type-article #page-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+  background-image: none;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+}
+
+.page-news .view-content h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  position: relative;
+  top: -18px;
+  left: 5px;
+  background-color: white;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.page-news .submitted {
+  clear: both;
+}
+
+.page-news div.node-article {
+  border: 1px solid black;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.page-news h2 a,
 .link {
    color:#4A4A4A;
    font-family:Arial, Verdana, Helvetica, sans-serif;
@@ -500,11 +534,13 @@ body {
    padding-top:7px;
 }
 
+.page-news h2 a,
 .link a {
    color:#4A4A4A;
    text-decoration:none;
 }
 
+.page-news h2 a:hover,
 .link a:hover {
    color:#4A4A4A;
    text-decoration:underline;
