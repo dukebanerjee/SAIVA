@@ -501,6 +501,7 @@ body {
   padding-bottom: 0;
 }
 
+.page-documents .view-content h2,
 .page-news .view-content h2 {
   font-size: 15px;
   font-weight: 600;
@@ -514,11 +515,13 @@ body {
   padding-right: 5px;
 }
 
+.page-documents .submitted,
 .page-news .submitted {
   clear: both;
   font-weight: 600;
 }
 
+.page-documents div.node-document,
 .page-news div.node-article {
   border: 1px solid black;
   padding: 5px;
@@ -527,6 +530,12 @@ body {
   margin-bottom: 20px;
 }
 
+.page-documents ul,
+.page-documents li {
+  list-style: none;
+}
+
+.page-documents h2 a,
 .page-news h2 a,
 .link {
    color:#4A4A4A;
@@ -536,12 +545,14 @@ body {
    padding-top:7px;
 }
 
+.page-documents h2 a,
 .page-news h2 a,
 .link a {
    color:#4A4A4A;
    text-decoration:none;
 }
 
+.page-documents h2 a:hover,
 .page-news h2 a:hover,
 .link a:hover {
    color:#4A4A4A;
@@ -612,11 +623,27 @@ body {
   width: 35em;
 }
 
-#webform-client-form-14 {
+#webform-client-form-14,
+#webform-client-form-19 {
   margin: auto;
+}
+
+#webform-client-form-14 {
   width: 40em;
+}
+
+#webform-client-form-19 {
+  width: 50em;
 }
 
 #webform-client-form-14 .form-actions {
   padding-left: 6em;
+}
+
+#webform-client-form-19 .form-actions {
+  padding-left: 16em;
+}
+
+.field-name-field-summary {
+    margin: 15px;
 }

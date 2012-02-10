@@ -46,6 +46,9 @@
         <?php } else if ($node->type == 'article') { ?>
           <h1 class="title" id="page-title">News:</h1>
           <h2 class="article-title"><?php print $title; ?></h2>
+        <?php } else if ($node->type == 'document') { ?>
+          <h1 class="title" id="page-title">Document:</h1>
+          <h2 class="article-title"><?php print $title; ?></h2>
         <?php } else { ?>
           <h1 class="title" id="page-title"><?php print $title; ?>:</h1>
         <?php } ?>
@@ -78,4 +81,4 @@
     </div>
   </div>
 </div>
-<?php /* debug: db_query("DELETE FROM {cache};") */ ?>
+<?php db_query("DELETE FROM {cache};") ?>
