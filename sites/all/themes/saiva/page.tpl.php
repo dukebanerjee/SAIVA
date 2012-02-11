@@ -53,6 +53,9 @@
         <?php } else if ($node->type == 'document') { ?>
           <h1 class="title" id="page-title">Documents:</h1>
           <h2 class="article-title"><?php print $title; ?></h2>
+        <?php } else if ($node->type == 'event') { ?>
+          <h1 class="title" id="page-title">Events Calendar:</h1>
+          <h2 class="article-title"><?php print $title; ?></h2>
         <?php } ?>
         <?php } else { ?>
           <h1 class="title" id="page-title"><?php print $title; ?>:</h1>
