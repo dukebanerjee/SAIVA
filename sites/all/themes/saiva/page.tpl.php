@@ -37,14 +37,16 @@
   <div id="columns-top"></div>
   <div id="columns">
     <div id="content">
-      <a id="main-content"></a>
+      <a id="main-content"></a>      
       <?php if(!$is_front): ?>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <?php if(arg(0) == 'user' && arg(1) == 'register') { ?>
           <h1 class="title" id="page-title">Signup:</h1>
         <?php } else if (isset($node)) { ?>
-        <?php if ($node->type == 'article') { ?>
+        <?php if ($node->type == 'page') { ?>
+          <h1 class="title" id="page-title"><?php print $title; ?>:</h1>
+        <?php } else if ($node->type == 'article') { ?>
           <h1 class="title" id="page-title">Articles &amp; Links:</h1>
           <h2 class="article-title"><?php print $title; ?></h2>
         <?php } else if ($node->type == 'news') { ?>
@@ -69,6 +71,11 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
+    <?php if ($page['sidebar_second']): ?>
+      <div id="sidebar-second" class="column sidebar">
+        <?php print render($page['sidebar_second']); ?>
+      </div>
+    <?php endif; ?>
     <div id="footer1">
       <div id="footer1-gutter-left"></div>
       <div id="footer1-center">

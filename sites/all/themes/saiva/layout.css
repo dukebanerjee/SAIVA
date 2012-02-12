@@ -5,8 +5,12 @@ body {
   background-repeat: repeat-x;
 }
 
-#content {
+.not-front #content {
   width: 925px;
+}
+
+#content {
+  float: left;
 }
 
 #header {
@@ -354,7 +358,7 @@ body {
 }
 
 #columns {
-  width: 980px; 
+  width: 980px;
   background-image: url('images/box1-center.jpg');
   background-repeat: repeat-y;  
   float: left;  
@@ -658,4 +662,69 @@ body {
 
 .field-name-field-duration {
     margin-top: 15px;
+}
+
+#sidebar-second {
+  float: left;
+  width: 250px;
+}
+
+#block-views-events-calendar-block-2 h2 {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #2f9cf7;
+  background-image: url('images/event-icon.jpg');
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 46px;
+  padding: 0;
+  margin: 0;
+  padding-left: 55px;
+  padding-top: 12px;
+}
+
+#block-views-events-calendar-block-2 ul,
+#block-views-events-calendar-block-2 li {
+  list-style: none;
+}
+
+#block-views-events-calendar-block-2 li {
+  padding-bottom: 15px;
+}
+
+#block-views-events-calendar-block-2 {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #636363;
+  font-weight: 600;
+}
+
+#block-views-events-calendar-block-2 .views-field,
+#block-views-events-calendar-block-2 .field-content,
+#block-views-events-calendar-block-2 .field-content p {
+  margin: 0;
+  padding: 0;
+}
+
+#block-views-events-calendar-block-2 a {
+  text-decoration: none;
+  color: #262626;
+}
+
+#block-views-events-calendar-block-2 a:hover {
+  color: #262626;
+  text-decoration: underline;
+}
+
+#block-block-1 h2 {
+  display: none;
+}
+
+#sidebar-second {
+  margin: 15px;
+}
+
+#sidebar-second .block {
+  padding-bottom: 15px;
 }
